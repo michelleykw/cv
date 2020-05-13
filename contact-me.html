@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact me</title>
+  </head>
+  <body>
+    <h1>My Contact Details</h1>
+    <p>Email: myxed.enquires@gmail.com</p>
+    <p>Linkedin: <a href="https://www.linkedin.com/in/michelle-yong/">Michelle Yong</a></p>
+  </body>
+
+  <!-- For forms, need to specify the behviour of the form (require JS)-->
+  <form action="mailto:myxed.enquires@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Name: </label>
+    <input type="text" name="name" value=""> <!--Self-closing tag-->
+    <br>
+    <label for="email">Email: </label>
+    <input type="email" name="email">
+    <br>
+    <label for="message">Message: </label> <br>
+    <textarea name="message" rows="10" cols="80"></textarea>
+    <br>
+    <label for="resource">Additional Resources: </label>
+    <input type="file" name="resource" value="">
+    <br>
+    <label for="sign_up">Do you want to sign up for the email list?</label>
+    <input type="checkbox" name="sign_up" value="">
+    <br>
+    <input type="submit" name="submit">
+  </form>
+</html>

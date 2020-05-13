@@ -1,0 +1,150 @@
+<!--
+* To create new file -> "a" when clicking on the folder
+* To have the basic boilerplates (code template to reuse) -> "html" then ENTER
+  -> this is a emmet shortcut "docs.emmet.io/cheat-sheet"
+* Blue dot on top means the file is not saved
+* Can open the file directly from the directory or right click the file and
+  copy full path, then paste it into Chrome
+* Auto tags, eg: "h1" then Enter to create the opena dn closing tags
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> <!--HTML type-->
+  <head> <!--holds info about webpage & tells browser how to handle the page-->
+    <meta charset="utf-8">
+    <!-- Meta Element: Character Set
+         * Set to UTF8 (standard, includes all international symbol and emojis)
+         * Gives extra metadata or associated deta to HTML Document
+         * Tells the browser all the text in the page is encoded using UTF8
+           encoding system
+         * Else, mojibake
+         * Different encoding is specialised for different symbols
+         * Other types: "description" "keywords" "author" "viewport"-->
+    <title>Michelle's Personal Site</title>
+  </head>
+
+  <body>
+    <!--Image tag needs to specify both element "img" & attribute "scr=..."
+        * Can upload image to photobucket to get image source
+          or put the image into the folder on the left
+        * Google search engine checks through alt tag to rank-->
+    <table>
+      <td>
+        <img src="https://media-exp1.licdn.com/dms/image/C5103AQFmaow24J1beA/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=g3sITxDFOZZGlESMTMe1uLnoUJ5_XvT9utDNHAXcVso" alt="Michelle Yong's profile picture">
+      </td>
+      <td>
+        <h1>Michelle Yong</h1>
+        <!--em is preferred over i; strong is preferred over b-->
+        <!--Anchor tag: HTML element, HTML attribute, Link Destination, Link Text, CLosing Tag-->
+        <p><em><strong>Computer Science</strong> Undergraduate at
+           <a href="https://www.comp.nus.edu.sg/programmes/ug/cs/curr/">NUS School of Computing</a></em></p>
+           <p>I am a student, specialising in Artificial Intelligence, with a second major in Management. </p>
+      </td>
+    </table>
+
+    <p>I love to draw during my free time and is an active visitor of USS. I teach private
+      <a href="http://www.hometuitioncare.com.sg/parent/profile/?tutorid=18590">tuition</a>
+    for Secondary School Mathematics and Science.</p>
+    <img src="images/MichelleUSS.png" alt="Michelle at USS"
+      style="width:300px;height:300px;">
+    <hr>
+
+    <h3>Education</h3>
+    <ul>
+      <li>National University of Singapore, 2018-now</li>
+      <li>National Junior College, 2016-2017</li>
+      <li>Commonwealth Secondary School, 2012-2015</li>
+      <li>Bukit Panjang Primary School, 2006-2011</li>
+    </ul>
+
+    <h3>Work Experience</h3>
+    <!Table attributes are not recommended in HTML, do so in CSS
+      Should group under head, body and foot for better organisation
+      By default browser will have a table withou any style
+      Can have nested table-->
+    <table cellspacing="8">
+      <thead>
+        <tr> <!---Creates a single row if there is data included, no columns-->
+          <th>Dates</th>
+          <th>Work</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2018-now</td>
+          <td>Private Tutor</td>
+        </tr>
+        <tr>
+          <td>Dec 2017-Feb 2018</td>
+          <td>Admin Associate at St.Hua Private School</td>
+        </tr>
+      </tbody>
+      <tfoot>
+
+      </tfoot>
+
+    </table>
+
+    <h3>Skills</h3>
+    <table cellspacing="8">
+      <tbody>
+        <tr>
+          <td>Web Development</td>
+          <!--COMMAND + CONTROL + SPACE to bring up the emoji keyboard-->
+          <td>★★★☆☆</td>
+          <td>Swift</td>
+          <td>★☆☆☆☆</td>
+          <td>Java</td>
+          <td>★★★★☆</td>
+        </tr>
+        <tr>
+          <td>iOS Development</td>
+          <td>★☆☆☆☆</td>
+          <td>Anroid Studio</td>
+          <td>★★★☆☆</td>
+          <td>Python</td>
+          <td>★★★★☆</td>
+        </tr>
+        <tr>
+          <td>Android Development</td>
+          <td>★★★☆☆</td>
+          <td>SQL</td>
+          <td>★☆☆☆☆</td>
+          <td>JavaScript</td>
+          <td>★★★★☆</td>
+        </tr>
+        <tr>
+          <td>React JS</td>
+          <td>★☆☆☆☆</td>
+          <td>MongoDB</td>
+          <td>★☆☆☆☆</td>
+          <td>HTML</td>
+          <td>★★★★☆</td>
+        </tr>
+        <tr>
+          <td>Node JS</td>
+          <td>★☆☆☆☆</td>
+          <td>Firebase</td>
+          <td>★★☆☆☆</td>
+          <td>CSS</td>
+          <td>★★★★☆</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+    <h3>Hobbies</h3>
+    <!--can change type, eg: <ol type="i"></ol> or
+        start at certain number, eg: <ol start="4"></ol>-->
+    <ol>
+      <li>Drawing and Painting</li>
+      <li>Badminton</li>
+      <li>Singing and Dancing</li>
+    </ol>
+
+    <hr>
+    <p>Click <a href="contact-me.html">here</a> to contact me!</p>
+
+
+  </body>
+</html>
