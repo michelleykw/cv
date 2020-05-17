@@ -1,150 +1,115 @@
-<!--
-* To create new file -> "a" when clicking on the folder
-* To have the basic boilerplates (code template to reuse) -> "html" then ENTER
-  -> this is a emmet shortcut "docs.emmet.io/cheat-sheet"
-* Blue dot on top means the file is not saved
-* Can open the file directly from the directory or right click the file and
-  copy full path, then paste it into Chrome
-* Auto tags, eg: "h1" then Enter to create the opena dn closing tags
--->
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr"> <!--HTML type-->
-  <head> <!--holds info about webpage & tells browser how to handle the page-->
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="utf-8">
-    <!-- Meta Element: Character Set
-         * Set to UTF8 (standard, includes all international symbol and emojis)
-         * Gives extra metadata or associated deta to HTML Document
-         * Tells the browser all the text in the page is encoded using UTF8
-           encoding system
-         * Else, mojibake
-         * Different encoding is specialised for different symbols
-         * Other types: "description" "keywords" "author" "viewport"-->
-    <title>Michelle's Personal Site</title>
+    <title>Michelle Yong</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Favourite icon (favicon) - the icon beside the title
+      https://www.favicon.cc/  -->
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
   </head>
-
   <body>
-    <!--Image tag needs to specify both element "img" & attribute "scr=..."
-        * Can upload image to photobucket to get image source
-          or put the image into the folder on the left
-        * Google search engine checks through alt tag to rank-->
-    <table>
-      <td>
-        <img src="https://media-exp1.licdn.com/dms/image/C5103AQFmaow24J1beA/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=g3sITxDFOZZGlESMTMe1uLnoUJ5_XvT9utDNHAXcVso" alt="Michelle Yong's profile picture">
-      </td>
-      <td>
-        <h1>Michelle Yong</h1>
-        <!--em is preferred over i; strong is preferred over b-->
-        <!--Anchor tag: HTML element, HTML attribute, Link Destination, Link Text, CLosing Tag-->
-        <p><em><strong>Computer Science</strong> Undergraduate at
-           <a href="https://www.comp.nus.edu.sg/programmes/ug/cs/curr/">NUS School of Computing</a></em></p>
-           <p>I am a student, specialising in Artificial Intelligence, with a second major in Management. </p>
-      </td>
-    </table>
+    <!--Can use Pesticide.io to highlight the various HTML element and show
+    the various boxes on the screen-->
 
-    <p>I love to draw during my free time and is an active visitor of USS. I teach private
-      <a href="http://www.hometuitioncare.com.sg/parent/profile/?tutorid=18590">tuition</a>
-    for Secondary School Mathematics and Science.</p>
-    <img src="images/MichelleUSS.png" alt="Michelle at USS"
-      style="width:300px;height:300px;">
+    <div class="top-container">
+      <img class="left-cloud" src="images/cloud.png" alt="cloud-img">
+      <img class="right-cloud" src="images/cloud.png" alt="cloud-img">
+      <h1>I'm Michelle.</h1>
+      <h3>a <span class="italic">Computer Science undergraduate</span> at NUS</h3>
+    </div>
+<!--This 2 images are on the same line because of CSS Display Property
+    1. Block Elements
+       -> eg. p, h1,..., div, ol, ul, li, form
+       -> takes up the whole width of the screen
+       -> but able to change width
+       -> height is determined by the content
+       -> can change "display: inline;"" under CSS
+    2. Inline
+       -> eg. span
+       -> can change "display: block;" under CSS
+       -> unable to change width
+       -> elements will be shown on the same line if possible
+    3. Inline-Block
+       -> eg. img
+       -> able to change width and height
+       -> do not take up the entire screen space
+       -> elements will be shown on the same line if possible
+    4. None"
+       -> Useful for hiding Elements
+       -> Will not shown the element entirely
+       -> VS set "visibility: hidden;"
+          -> element is not shown but can see empty space
+
+How things get rendered on screen?
+* Content determines height
+* Order comes from HTML code
+* Children sits on top of parents (closer to viewer)-->
+
+<!--Default text before content: loremipsumgenerator.com-->
+<!--Use flaticon.com to get images/icons -> can insert using relative url -> need credit
+    Use "giphy.com" for animated GIFs, then can select sticker with transparent background-->
+  <div class="middle-container">
+    <div class="profile">
+      <img class="profile-img" src="images/profile.jpg" alt="profile-img">
+      <h2>Hello.</h2>
+      <p class="intro">As a Year 2 undergraduate pursuing Bachelor of Computing in Computer
+         Science in NUS, I would be specialising in AI.
+         I am highly interested in pursuing internships with start-ups to gain
+         insight into the tech start-up scene in Singapore.</p>
+    </div>
     <hr>
-
-    <h3>Education</h3>
-    <ul>
-      <li>National University of Singapore, 2018-now</li>
-      <li>National Junior College, 2016-2017</li>
-      <li>Commonwealth Secondary School, 2012-2015</li>
-      <li>Bukit Panjang Primary School, 2006-2011</li>
-    </ul>
-
-    <h3>Work Experience</h3>
-    <!Table attributes are not recommended in HTML, do so in CSS
-      Should group under head, body and foot for better organisation
-      By default browser will have a table withou any style
-      Can have nested table-->
-    <table cellspacing="8">
-      <thead>
-        <tr> <!---Creates a single row if there is data included, no columns-->
-          <th>Dates</th>
-          <th>Work</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2018-now</td>
-          <td>Private Tutor</td>
-        </tr>
-        <tr>
-          <td>Dec 2017-Feb 2018</td>
-          <td>Admin Associate at St.Hua Private School</td>
-        </tr>
-      </tbody>
-      <tfoot>
-
-      </tfoot>
-
-    </table>
-
-    <h3>Skills</h3>
-    <table cellspacing="8">
-      <tbody>
-        <tr>
-          <td>Web Development</td>
-          <!--COMMAND + CONTROL + SPACE to bring up the emoji keyboard-->
-          <td>★★★☆☆</td>
-          <td>Swift</td>
-          <td>★☆☆☆☆</td>
-          <td>Java</td>
-          <td>★★★★☆</td>
-        </tr>
-        <tr>
-          <td>iOS Development</td>
-          <td>★☆☆☆☆</td>
-          <td>Anroid Studio</td>
-          <td>★★★☆☆</td>
-          <td>Python</td>
-          <td>★★★★☆</td>
-        </tr>
-        <tr>
-          <td>Android Development</td>
-          <td>★★★☆☆</td>
-          <td>SQL</td>
-          <td>★☆☆☆☆</td>
-          <td>JavaScript</td>
-          <td>★★★★☆</td>
-        </tr>
-        <tr>
-          <td>React JS</td>
-          <td>★☆☆☆☆</td>
-          <td>MongoDB</td>
-          <td>★☆☆☆☆</td>
-          <td>HTML</td>
-          <td>★★★★☆</td>
-        </tr>
-        <tr>
-          <td>Node JS</td>
-          <td>★☆☆☆☆</td>
-          <td>Firebase</td>
-          <td>★★☆☆☆</td>
-          <td>CSS</td>
-          <td>★★★★☆</td>
-        </tr>
-      </tbody>
-    </table>
-
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="coding-img" src="https://image.flaticon.com/icons/svg/2920/2920244.svg" alt="coding-img">
+        <h3>Programming and Web/iOS Development</h3>
+        <p>I am proficient in multiple programming languages, including Java,
+           Python, Javascript, HTML and CSS. Having knowledge in both frontend
+           and backend, such as SQL, MongoDB and Firebase, I have been creating
+           my own websites and applications during my freetime. This includes the
+           use of Bootstrap 4, React JS, Node JS, Swift and Android Studio. I will
+           be further learning Ionic and Angular, as well as how to conduct proper
+           testing for the websites and applications.</p>
+      </div>
+      <div class="skill-row">
+        <img class="ai-img" src="https://image.flaticon.com/icons/png/512/2591/2591949.png" alt="ai-img">
+        <h3>Artificial Intelligence and Machine Learning</h3>
+        <p>As an undergraduate specialising in AI, I am currently taking courses
+           on these.</p>
+      </div>
+      <div class="skill-row">
+        <img class="design-img" src="https://image.flaticon.com/icons/svg/2868/2868182.svg" alt="design-img">
+        <h3>Designing</h3>
+        <p>I am skilled in the use of Adobe Photshop, Illustor and XD, as well as
+           GIMP and iMovie. Over the past years, I have been actively
+           participating in school events, such as the annual
+           <a href="https://www.instagram.com/p/BzCuIcKFET5/?utm_source=ig_web_copy_link">
+           NUSSU RAG & FLAG</a> as the Float Head in 2019 and the
+           <a href="https://www.instagram.com/p/B9Av3BQFjW5/?utm_source=ig_web_copy_link">
+           NUSSU E-Open Day Team</a> as a Publicity Executive. Do head over to the
+           following Instagram posts to view what I had done!</p>
+      </div>
+    </div>
     <hr>
-    <h3>Hobbies</h3>
-    <!--can change type, eg: <ol type="i"></ol> or
-        start at certain number, eg: <ol start="4"></ol>-->
-    <ol>
-      <li>Drawing and Painting</li>
-      <li>Badminton</li>
-      <li>Singing and Dancing</li>
-    </ol>
+    <div class="contact-me">
+      <h2>Get In Touch.</h2>
+      <h3>Any queries or projects for collaboration?</h3>
+      <p class="contact-message">✓Web Development ✓iOS Development ✓Social Media Publicity ✓Private Tuition</p>
+      <a class="btn" href="mailto:myxed.enquires@gmail.com">CONTACT ME</a>
+      <!--To generate a button "https://cssbuttoncreator.com/" then copy css code-->
+    </div>
+  </div>
 
-    <hr>
-    <p>Click <a href="contact-me.html">here</a> to contact me!</p>
-
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/michelle-yong">LinkedIn</a>
+    <a class="footer-link" href="https://www.instagram.com/mychellexx">Instagram</a>
+    <a class="footer-link" href="https://github.com/michelleykw">Github</a>
+    <p class="copyright">© 2020 Michelle Yong.</p>
+  </div>
 
   </body>
 </html>
+
+<!--For more practtice, "https://www.frontendmentor.io/"-->
