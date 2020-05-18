@@ -40,6 +40,7 @@ hr {
 /* Navigation Bar */
 .navbar {
   background-color: #C06C84;
+  z-index: 1;
 }
 
 .navbar-brand {
@@ -101,7 +102,7 @@ hr {
   opacity:0.8;
 }
 
-@media (max-width: 680px) {
+@media only screen and (max-width: 680px) {
   .top-container h3  {
     font-size: 1.5rem;
     width: 60%;
@@ -135,7 +136,7 @@ hr {
   margin-top: 20px;
 }
 
-@media (max-width: 960px) {
+@media only screen and (max-width: 960px) {
   #profile-section {
     text-align: center;
     margin: 0 auto 100px auto;
@@ -149,7 +150,7 @@ hr {
   }
 }
 
-@media (max-width: 660px) {
+@media only screen and (max-width: 660px) {
   #profile-section .profile-img {
     width: 40%;
   }
