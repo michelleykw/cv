@@ -34,7 +34,7 @@ hr {
   border-bottom: none;
   border-color: #E1CDD3; /*#C06C84; with 0.3 opacity #8ec6c5*/
   width: 5%;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 /* Navigation Bar */
@@ -122,7 +122,7 @@ hr {
 #profile-section {
   width: 60%;
   height: auto;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 50px auto;
 }
 
 .profile-img {
@@ -139,7 +139,7 @@ hr {
 @media only screen and (max-width: 960px) {
   #profile-section {
     text-align: center;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 50px auto;
   }
 
   #profile-section .profile-img {
@@ -160,14 +160,14 @@ hr {
 #eduction-section {
   width: 60%;
   height: auto;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 50px auto;
 }
 
 /* Work Experience Section */
 #work-experience-section {
   width: 60%;
   height: auto;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 50px auto;
 }
 
 /* Skills Section */
@@ -177,7 +177,7 @@ hr {
   margin: 100px auto 100px auto;
 }
 
-.coding-img {
+.coding-img, .design-img  {
   width: 20%;
   float: left;
   margin-right: 30px;
@@ -189,51 +189,41 @@ hr {
   margin-left: 30px;
 }
 
-.design-img {
-  width: 20%;
-  float: left;
-  margin-right: 30px;
+@media only screen and (max-width: 1012px) {
+  .coding-img, .ai-img, .design-img  {
+    width: 20%;
+    float: none;
+  }
 }
 
 /* Projects and Hackathons Section */
-#projects-and-hackathons-section {
+#projects-section {
   width: 60%;
   height: auto;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 50px auto;
 }
 
 /* Co-Curricular Activities Section */
 #cca-section {
   width: 60%;
   height: auto;
-  margin: 0 auto 100px auto;
-}
-
-.card-header {
-  padding: 0;
-  border: 0;
-  background-color: #F4F4F4;
-}
-
-.card {
-  border: 0;
-  padding: 10px 0;
-  background-color: #F4F4F4;
-}
-
-.card-body {
-  text-align: left;
-  background-color: #F2F2F2;
+  margin: 0 auto 50px auto;
 }
 
 /* Volunteer Section */
 #volunteer-section {
   width: 60%;
   height: auto;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 50px auto;
 }
 
 /* Contact Section */
+#contact-section {
+  width: 60%;
+  height: auto;
+  margin: 0 auto 50px auto;
+}
+
 .contact-message {
   width: 50%;
   margin: 40px auto 60px;
@@ -281,7 +271,7 @@ hr {
 
 /* Volunteer Section */
 #contact-section {
-  margin: 0 auto 100px auto;
+  margin: 0 auto 50px auto;
 }
 
 /* Footer Section */
@@ -308,4 +298,22 @@ hr {
   color: #F4F4F4;
   font-size: 0.75rem;
   padding: 20px 0;
+}
+
+/* Cards */
+#cca-section .card-header, #volunteer-section .card-header, #projects-section .card-header {
+  padding: 0;
+  border: 0;
+  background-color: #F4F4F4;
+}
+
+#cca-section .card , #volunteer-section .card, #projects-section .card {
+  border: 0;
+  padding: 10px 0;
+  background-color: #F4F4F4;
+}
+
+#cca-section .card-body, #volunteer-section .card-body, #projects-section .card-body {
+  text-align: left;
+  background-color: #F2F2F2;
 }

@@ -44,7 +44,7 @@
                     <a class="nav-link" href="#skills-section">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects-and-hackathons-section">Projects & Hackathons</a>
+                    <a class="nav-link" href="#projects-section">Projects & Hackathons</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#cca-section">Co-Curricular Activities</a>
@@ -111,55 +111,68 @@
         <div class="skill-row">
           <img class="coding-img" src="https://image.flaticon.com/icons/svg/2920/2920244.svg" alt="coding-img">
           <h3>Programming and Web/iOS Development</h3>
-          <p>I am proficient in multiple programming languages, including Java,
-             Python, Javascript, HTML and CSS. Having knowledge in both frontend
-             and backend, such as SQL, MongoDB and Firebase, I have been creating
-             my own websites and applications during my freetime. This includes the
-             use of Bootstrap 4, React JS, Node JS, Swift and Android Studio. I will
-             be further learning Ionic and Angular, as well as how to conduct proper
-             testing for the websites and applications.</p>
+          <ul>
+            <li>Proficient in multiple programming languages, including Java, Python, Javascript, HTML and CSS</li>
+            <li>Basic knowledge in databases, such as SQL and Firebase</li>
+            <li>Web Development, including use of Bootstrap 4</li>
+            <li>Android and iOS Development, including use of Android Studio</li>
+            <li>To learn: MongoDB, Ionic, Angular, React JS, Node JS, Swift</li>
+          </ul>
         </div>
         <div class="skill-row">
           <img class="ai-img" src="https://image.flaticon.com/icons/png/512/2591/2591949.png" alt="ai-img">
           <h3>Artificial Intelligence and Machine Learning</h3>
-          <p>As an undergraduate specialising in AI, I am currently taking courses
-             on these.</p>
-        </div>
+          <ul>
+            <li>Including Deep Learning and Augemented Reality (in process of learning)</li>
+          </ul>
+          </div>
         <div class="skill-row">
           <img class="design-img" src="https://image.flaticon.com/icons/svg/2868/2868182.svg" alt="design-img">
           <h3>Designing</h3>
-          <p>I am skilled in the use of Adobe Photshop, Illustor and XD, as well as
-             GIMP and iMovie. Over the past years, I have been actively
-             participating in school events, such as the annual
-             <a href="https://www.instagram.com/p/BzCuIcKFET5/?utm_source=ig_web_copy_link">
-             NUSSU RAG & FLAG</a> as the Float Head in 2019 and the
-             <a href="https://www.instagram.com/p/B9Av3BQFjW5/?utm_source=ig_web_copy_link">
-             NUSSU E-Open Day Team</a> as a Publicity Executive. Do head over to the
-             following Instagram posts to view what I had done!</p>
+          <ul>
+            <li>Basic knowledge and use of Adobe Photshop, Illustor and XD, as well as GIMP and iMovie!</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- Projects and Hackathons Section -->
-    <section id="projects-and-hackathons-section">
+    <section id="projects-section">
       <hr>
-
       <div class="container-fluid">
         <h2>Projects and Hackathons</h2>
+        <div class="accordion" id="accordion-volunteer">
+          <div class="card">
+            <div class="card-header" id="projects-1">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  CS2103T Software engineering "EzWatchList"
+                </button>
+              </h2>
+            </div>
 
-        <div class="row">
-          <div class="feature-box col-lg-6">
-            <h3>CS2103T Software engineering "EzWatchList"</h3>
-            <p>A show tracker that allows users to search and add shows</p>
+            <div id="collapseOne" class="collapse" aria-labelledby="projects-1" data-parent="#accordion-projects">
+              <div class="card-body">
+                <p>A show tracker that allows users to search and add shows to their watchlist</p>
+              </div>
+            </div>
           </div>
-
-          <div class="feature-box col-lg-6">
-            <h3>Independent Software Development Project (Orbital)</h3>
-            <p>Project Gemini</p>
-            <p>A financial tracker that allows users to manage their expenses and income</p>
+          <div class="card">
+            <div class="card-header" id="projects-2">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Independent Software Development Project (Orbital) "SaveMe"
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="projects-2" data-parent="#accordion-projects">
+              <div class="card-body">
+                <p>Awarded Project Gemini</p>
+                <p>A financial tracker that allows users to manage their expenses and income</p>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
 
