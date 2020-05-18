@@ -295,6 +295,7 @@ hr {
   font-family: 'Montserrat', sans-serif;
   margin: 10px 30px;
   text-decoration: none;
+  font-weight: 400;
 }
 
 .footer-link:hover {
