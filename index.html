@@ -3,113 +3,317 @@
   <head>
     <meta charset="utf-8">
     <title>Michelle Yong</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
-    <!--Favourite icon (favicon) - the icon beside the title
-      https://www.favicon.cc/  -->
-    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!--Favicon -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon.png">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a5b39994b3.js" crossorigin="anonymous"></script>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!--Can use Pesticide.io to highlight the various HTML element and show
-    the various boxes on the screen-->
 
-    <div class="top-container">
-      <img class="left-cloud" src="images/cloud.png" alt="cloud-img">
-      <img class="right-cloud" src="images/cloud.png" alt="cloud-img">
-      <h1>I'm Michelle.</h1>
-      <h3>a <span class="italic">Computer Science undergraduate</span> at NUS</h3>
-    </div>
-<!--This 2 images are on the same line because of CSS Display Property
-    1. Block Elements
-       -> eg. p, h1,..., div, ol, ul, li, form
-       -> takes up the whole width of the screen
-       -> but able to change width
-       -> height is determined by the content
-       -> can change "display: inline;"" under CSS
-    2. Inline
-       -> eg. span
-       -> can change "display: block;" under CSS
-       -> unable to change width
-       -> elements will be shown on the same line if possible
-    3. Inline-Block
-       -> eg. img
-       -> able to change width and height
-       -> do not take up the entire screen space
-       -> elements will be shown on the same line if possible
-    4. None"
-       -> Useful for hiding Elements
-       -> Will not shown the element entirely
-       -> VS set "visibility: hidden;"
-          -> element is not shown but can see empty space
+    <section id="title-section">
+      <div class="container-fluid">
+        <!-- Navigation Bar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">Michelle Yong Kai Wen</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#eduction-section">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills-section">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects-and-hackathons-section">Projects & Hackathons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cca-section">Co-Curricular Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#volunteer-section">Volunteer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work-experience-section">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact</a>
+                </li>
+            </ul>
+         </div>
+        </nav>
 
-How things get rendered on screen?
-* Content determines height
-* Order comes from HTML code
-* Children sits on top of parents (closer to viewer)-->
+        <!-- Title Page -->
 
-<!--Default text before content: loremipsumgenerator.com-->
-<!--Use flaticon.com to get images/icons -> can insert using relative url -> need credit
-    Use "giphy.com" for animated GIFs, then can select sticker with transparent background-->
+        <div class="top-container">
+          <div class="bg-castle-img">
+            <img class="left-cloud" src="images/cloud.png" alt="cloud-img">
+            <img class="right-cloud" src="images/cloud.png" alt="cloud-img">
+            <h1>I'm Michelle.</h1>
+            <h3>a <span class="title-desc">Computer Science Undergraduate</span> at NUS</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
   <div class="middle-container">
-    <div class="profile">
+
+    <!-- Profile Section -->
+    <div id="profile-section">
       <img class="profile-img" src="images/profile.jpg" alt="profile-img">
-      <h2>Hello.</h2>
-      <p class="intro">As a Year 2 undergraduate pursuing Bachelor of Computing in Computer
+      <h2 class="profile-heading">Hello</h2>
+      <p class="profile-desc">As a Year 2 undergraduate pursuing Bachelor of Computing in Computer
          Science in NUS, I would be specialising in AI.
          I am highly interested in pursuing internships with start-ups to gain
          insight into the tech start-up scene in Singapore.</p>
     </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="coding-img" src="https://image.flaticon.com/icons/svg/2920/2920244.svg" alt="coding-img">
-        <h3>Programming and Web/iOS Development</h3>
-        <p>I am proficient in multiple programming languages, including Java,
-           Python, Javascript, HTML and CSS. Having knowledge in both frontend
-           and backend, such as SQL, MongoDB and Firebase, I have been creating
-           my own websites and applications during my freetime. This includes the
-           use of Bootstrap 4, React JS, Node JS, Swift and Android Studio. I will
-           be further learning Ionic and Angular, as well as how to conduct proper
-           testing for the websites and applications.</p>
+
+    <!-- Education Section -->
+    <section id="eduction-section">
+      <hr>
+
+      <div class="container-fluid">
+        <h2>Education</h2>
+        <h3>National University of Singapore, Bachelor of Computing (Hons) in Computer Science (Specialisation in Artificial Intelligence) with Minor in Management</h3>
+        <p>Aug 2018 - now</p>
+        <p>Current CAP: 4.21</p>
+        <p>Expected Date of Graduation: June 2022</p>
       </div>
-      <div class="skill-row">
-        <img class="ai-img" src="https://image.flaticon.com/icons/png/512/2591/2591949.png" alt="ai-img">
-        <h3>Artificial Intelligence and Machine Learning</h3>
-        <p>As an undergraduate specialising in AI, I am currently taking courses
-           on these.</p>
+    </section>
+
+    <!-- Skills Sections -->
+    <section id="skills-section">
+      <hr>
+
+      <div class="container-fluid">
+        <h2>Skills</h2>
+        <div class="skill-row">
+          <img class="coding-img" src="https://image.flaticon.com/icons/svg/2920/2920244.svg" alt="coding-img">
+          <h3>Programming and Web/iOS Development</h3>
+          <p>I am proficient in multiple programming languages, including Java,
+             Python, Javascript, HTML and CSS. Having knowledge in both frontend
+             and backend, such as SQL, MongoDB and Firebase, I have been creating
+             my own websites and applications during my freetime. This includes the
+             use of Bootstrap 4, React JS, Node JS, Swift and Android Studio. I will
+             be further learning Ionic and Angular, as well as how to conduct proper
+             testing for the websites and applications.</p>
+        </div>
+        <div class="skill-row">
+          <img class="ai-img" src="https://image.flaticon.com/icons/png/512/2591/2591949.png" alt="ai-img">
+          <h3>Artificial Intelligence and Machine Learning</h3>
+          <p>As an undergraduate specialising in AI, I am currently taking courses
+             on these.</p>
+        </div>
+        <div class="skill-row">
+          <img class="design-img" src="https://image.flaticon.com/icons/svg/2868/2868182.svg" alt="design-img">
+          <h3>Designing</h3>
+          <p>I am skilled in the use of Adobe Photshop, Illustor and XD, as well as
+             GIMP and iMovie. Over the past years, I have been actively
+             participating in school events, such as the annual
+             <a href="https://www.instagram.com/p/BzCuIcKFET5/?utm_source=ig_web_copy_link">
+             NUSSU RAG & FLAG</a> as the Float Head in 2019 and the
+             <a href="https://www.instagram.com/p/B9Av3BQFjW5/?utm_source=ig_web_copy_link">
+             NUSSU E-Open Day Team</a> as a Publicity Executive. Do head over to the
+             following Instagram posts to view what I had done!</p>
+        </div>
       </div>
-      <div class="skill-row">
-        <img class="design-img" src="https://image.flaticon.com/icons/svg/2868/2868182.svg" alt="design-img">
-        <h3>Designing</h3>
-        <p>I am skilled in the use of Adobe Photshop, Illustor and XD, as well as
-           GIMP and iMovie. Over the past years, I have been actively
-           participating in school events, such as the annual
-           <a href="https://www.instagram.com/p/BzCuIcKFET5/?utm_source=ig_web_copy_link">
-           NUSSU RAG & FLAG</a> as the Float Head in 2019 and the
-           <a href="https://www.instagram.com/p/B9Av3BQFjW5/?utm_source=ig_web_copy_link">
-           NUSSU E-Open Day Team</a> as a Publicity Executive. Do head over to the
-           following Instagram posts to view what I had done!</p>
+    </section>
+
+    <!-- Projects and Hackathons Section -->
+    <section id="projects-and-hackathons-section">
+      <hr>
+
+      <div class="container-fluid">
+        <h2>Projects and Hackathons</h2>
+
+        <div class="row">
+          <div class="feature-box col-lg-6">
+            <h3>CS2103T Software engineering "EzWatchList"</h3>
+            <p>A show tracker that allows users to search and add shows</p>
+          </div>
+
+          <div class="feature-box col-lg-6">
+            <h3>Independent Software Development Project (Orbital)</h3>
+            <p>Project Gemini</p>
+            <p>A financial tracker that allows users to manage their expenses and income</p>
+          </div>
+        </div>
+
       </div>
-    </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch.</h2>
-      <h3>Any queries or projects for collaboration?</h3>
-      <p class="contact-message">✓Web Development ✓iOS Development ✓Social Media Publicity ✓Private Tuition</p>
-      <a class="btn" href="mailto:myxed.enquires@gmail.com">CONTACT ME</a>
-      <!--To generate a button "https://cssbuttoncreator.com/" then copy css code-->
-    </div>
+    </section>
+
+    <!-- Co-Curricular Activities Section -->
+    <section id="cca-section">
+      <hr>
+
+      <div class="container-fluid">
+        <h2>Co-Curricular Activities</h2>
+        <div class="accordion" id="accordion-cca">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Executive in Finance, AIESEC in NUS
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="cca-1" data-parent="#accordion-cca">
+              <div class="card-body">
+                <p>Aug 2019 - now</p>
+                <ul>
+                  <li>Handles accounting and bookkeeping, audit and legalities for other departments</li>
+                  <li>Vice President, External Relations for National Leadership Development Conference 2020, AIESEC in Singapore, Oct 2019 – Jan 2020
+                    <ul>
+                      <li>Responsible for raising in-kind sponsors and one off sponsors for the conference</li>
+                    </ul>
+                  </li>
+                  <li>Product Pricing Research Team, May 2020 - now
+                    <ul>
+                      <li>Review current product pricings and integrate new products into pricing strategies to ensure sustainability</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="cca-2">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Executive in Publicity for E-Open Day and Union Camp, NUSSU
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="cca-2" data-parent="#accordion-cca">
+              <div class="card-body">
+                <p>Nov 2019 - now</p>
+                <ul>
+                  <li>Responsible for design of logo, poster and committee T-shirt</li>
+                  <li>Responsible for uploading Facebook and Instagram posts to promote the events</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="cca-3">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Float Head, School of Computing RAG Committee
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="cca-3" data-parent="#accordion-cca">
+              <div class="card-body">
+                <p>Dec 2018 - Aug 2019</p>
+                <ul>
+                  <li>Responsible for float design, safety, manpower allocation, budget allocation and spending</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="cca-4">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Badminton
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="cca-4" data-parent="#accordion-cca">
+              <div class="card-body">
+                <p>2012-2017</p>
+                <ul>
+                  <li>Member in Badminton in Commonwealth Secondary School and <a href="https://nationaljc.moe.edu.sg/co-curricular-activities/badminton-2/">National Junior College</a></li>
+                  <li>Particpated in mulitple competitions, such as the A Division Badminton Competition</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer-section">
+      <hr>
+
+      <div class="container-fluid">
+        <h2>Volunteer</h2>
+
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work-experience-section">
+      <hr>
+
+      <div class="container-fluid">
+
+        <h2>Work Experience</h2>
+
+        <div class="row">
+          <div class="feature-box col-lg-6">
+            <h3>Part-time Private Tuitor</h3>
+            <p>Mar 2018 - now</p>
+            <p>Prepare materials and tutor secondary school students in Mathematics and Physics</p>
+          </div>
+
+          <div class="feature-box col-lg-6">
+            <h3>Admin Executive, St. Hua Private School</h3>
+            <p>Dec 2017 - Feb 2018</p>
+            <p>Prepare materials and tutor secondary school students in Mathematics and Physics</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section">
+
+      <hr>
+      <div class="container-fluid">
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>Any queries or projects for collaboration?</h3>
+          <p class="contact-message">✓Web Development ✓iOS Development ✓Social Media Publicity ✓Private Tuition</p>
+          <a class="btn" href="mailto:michelleykw99@gmail.com">CONTACT ME</a>
+        </div>
+      </div>
+    </section>
+
   </div>
 
-  <div class="bottom-container">
+  <!-- Footer Section -->
+  <section id="footer-section">
     <a class="footer-link" href="https://www.linkedin.com/in/michelle-yong">LinkedIn</a>
     <a class="footer-link" href="https://www.instagram.com/mychellexx">Instagram</a>
     <a class="footer-link" href="https://github.com/michelleykw">Github</a>
     <p class="copyright">© 2020 Michelle Yong.</p>
-  </div>
+  </section>
+
 
   </body>
 </html>
-
-<!--For more practtice, "https://www.frontendmentor.io/"-->

@@ -3,20 +3,7 @@ body {
   margin: 0;
   text-align: center;
   color: #210216;
-  /*Works for inline elements or full width block elements like h1 and p that
-    goes from left to right edge; align those w/o a width set*/
   font-family: 'Merriweather', serif;
-  /* First asks the browser to try and render all text in verdana font
-   * If the browser/OS does not have verdana, then will set to default sans-serif
-   * Not all fonts are web safe!! Even if it may be a web safe font (not 100%)
-   * Have fall backs (from specific to less specific fonts of similar typeface)
-     -> Can check usage on "cssfontstack.com"
-     -> Set of font families where most OS will be able to render
-   * To ensure everyone sees the same font no matter if it is installed or not:
-     -> Use fonts embedding "fonts.google.com"
-     -> Has font families free for commercial to be embedded in website
-     -> Copy the chosen fonts -> Embed links into HTML head
-     -> Copy the font family to CSS body*/
 }
 
 h1 {
@@ -24,9 +11,6 @@ h1 {
   font-family: 'Sacramento', cursive;
   font-size: 5.625rem;
   margin: 50px auto 0 auto;
-  /*If is a block element and has width set, need to centre using this method:
-    width: 10%;
-    margin: 0 auto; Or margin: 0 auto 0 auto;*/
 }
 
 h2 {
@@ -48,23 +32,45 @@ p {
 hr {
   border :dotted 5px;
   border-bottom: none;
-  border-color: #C06C84; /*#8ec6c5*/
+  border-color: #E1CDD3; /*#C06C84; with 0.3 opacity #8ec6c5*/
   width: 5%;
   margin: 100px auto;
-  opacity: 0.3;
 }
 
-.italic {
-  font-style: italic;
+/* Navigation Bar */
+.navbar {
+  background-color: #C06C84;
 }
 
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item {
+  padding: 0 9px;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 0;
+}
+
+.middle-container {
+  margin: 80px 0;
+}
+
+/* Title Section */
 .top-container {
+  padding-top: 100px;
+}
+
+.bg-castle-img {
   position: relative;
-  padding-top: 20%;
+  padding-top: 18%;
   padding-bottom: 20%;
 }
 
-.top-container:before {
+.bg-castle-img:before {
   content:"";
   position:absolute;
   width:95%;
@@ -84,6 +90,7 @@ hr {
   position: absolute;
   right: 75%;
   top: 35%;
+  opacity:0.85;
 }
 
 .right-cloud {
@@ -91,38 +98,87 @@ hr {
   position: absolute;
   left: 70%;
   top: 15%;
+  opacity:0.8;
 }
 
-.middle-container {
-  margin: 100px 0; /*100 for top and bottom; 0 for left and right*/
+@media (max-width: 680px) {
+  .top-container h3  {
+    font-size: 1.5rem;
+    width: 60%;
+    margin: 0 auto 0 auto;
+  }
 
+  .top-container h1 {
+    font-size: 4.25rem;
+  }
 }
 
-.profile {
+.title-desc {
+  font-style: italic;
+}
+
+/* Profile Section*/
+#profile-section {
   width: 60%;
   height: auto;
-  margin: 0 auto 100px auto; /*to centre*/
-  text-align: left;
+  margin: 0 auto 100px auto;
 }
 
 .profile-img {
   width: 20%;
-  border-radius: 50%;
+  border-radius: 100%;
   float: left;
   margin-right: 30px;
 }
 
+.profile-heading {
+  margin-top: 20px;
+}
+
+@media (max-width: 960px) {
+  #profile-section {
+    text-align: center;
+    margin: 0 auto 100px auto;
+  }
+
+  #profile-section .profile-img {
+    width: 30%;
+    float: none;
+    margin-right: 0;
+    border-radius: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  #profile-section .profile-img {
+    width: 40%;
+  }
+}
+
+/* Education Section */
+#eduction-section {
+  width: 60%;
+  height: auto;
+  margin: 0 auto 100px auto;
+}
+
+/* Work Experience Section */
+#work-experience-section {
+  width: 60%;
+  height: auto;
+  margin: 0 auto 100px auto;
+}
+
+/* Skills Section */
 .skill-row {
   width: 60%;
   height: auto;
-  margin: 100px auto 100px auto; /*to centre*/
-  text-align: left;
+  margin: 100px auto 100px auto;
 }
 
 .coding-img {
   width: 20%;
-  float: left; /*should be used only for purpose of wrapping text*/
-  /*can have clear attribute for the text to prevent the text from wrapping on its left*/
+  float: left;
   margin-right: 30px;
 }
 
@@ -138,6 +194,45 @@ hr {
   margin-right: 30px;
 }
 
+/* Projects and Hackathons Section */
+#projects-and-hackathons-section {
+  width: 60%;
+  height: auto;
+  margin: 0 auto 100px auto;
+}
+
+/* Co-Curricular Activities Section */
+#cca-section {
+  width: 60%;
+  height: auto;
+  margin: 0 auto 100px auto;
+}
+
+.card-header {
+  padding: 0;
+  border: 0;
+  background-color: #F4F4F4;
+}
+
+.card {
+  border: 0;
+  padding: 10px 0;
+  background-color: #F4F4F4;
+}
+
+.card-body {
+  text-align: left;
+  background-color: #F2F2F2;
+}
+
+/* Volunteer Section */
+#work-experience-section {
+  width: 60%;
+  height: auto;
+  margin: 0 auto 100px auto;
+}
+
+/* Contact Section */
 .contact-message {
   width: 50%;
   margin: 40px auto 60px;
@@ -158,10 +253,10 @@ hr {
   -moz-border-radius: 10px;
   color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
-  box-shadow: 1px 1px 3px 0px #000000;
-  -webkit-box-shadow: 1px 1px 3px 0px #000000;
-  -moz-box-shadow: 1px 1px 3px 0px #000000;
-  text-shadow: 1px 1px 20px #000000;
+  box-shadow: 1px 1px 2px 0px #E1CDD3;
+  -webkit-box-shadow: 1px 1px 2px 0px #E1CDD3;
+  -moz-box-shadow: 1px 1px 2px 0px #E1CDD3;
+  text-shadow: 1px 1px 10px #E1CDD3;
   display: inline-block;
   cursor: pointer;
   text-align: center;
@@ -180,24 +275,31 @@ hr {
   background-image: linear-gradient(to bottom, #6C5B7B, #6983AA);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
+  color: #FFFFFF;
 }
 
-.bottom-container {
+/* Volunteer Section */
+#contact-section {
+  margin: 0 auto 100px auto;
+}
+
+/* Footer Section */
+#footer-section {
   background-color: #C06C84;
-  padding: 46px 0 16px; /*By default there is a 1em=16px padding at the bottom*/
+  padding: 46px 0 16px;
 }
 
 .footer-link {
   color: #88304e;
   font-family: 'Montserrat', sans-serif;
   margin: 10px 30px;
-  text-decoration: none; /*for angular state, by default is none*/
+  text-decoration: none;
 }
 
 .footer-link:hover {
   color: #F4F4F4;
   font-family: 'Montserrat', sans-serif;
-  text-decoration: none; /*for angular state, by default is none*/
+  text-decoration: none;
 }
 
 .copyright {
@@ -205,55 +307,3 @@ hr {
   font-size: 0.75rem;
   padding: 20px 0;
 }
-
-/* Start off by deciding colour palette and font theme*/
-
-/* CSS Box Model
-  * Margin e.g. width/height: 100px or 100%; (of viewport)
-  * Border e.g. {border:solid;  border-width:50px;  border-width:50px R B L;  border-top:0px;}
-  * Padding e.g. {padding:20px;  margin:10px;}
-*/
-
-/* To make font size dynamic:
-
-   * Use percentage (dynamic)
-   * Use em -> Font-size: 2em; (M/width) (dynamic)
-   * For font-size, 100% = 16px = 1em = 1 rem (recommended; easier to debug)
-   * Dynamic (changes size when user change the page size) vs static (px)
-   * For dynamic, font size gets inherited and added on top of whatever it got
-     from its parent.
-   * CSS3 has a root em (rem) that ignores all of the parent’s settings for the
-     font size
-
-*/
-
-/*To change position settings in CSS:
-  1. Static
-    * all HTML elements are static by default
-    * Means to go with HTML reule and keep to default
-  2. Relative
-    * Position the element that we select relative to how it would have been
-      position has it been static
-    * img {
-        position: relative;
-        left: 30;
-      }
-    * Using coordinate property T R B L -> top means have a top margin relative
-      to initial default edge
-    * When moving an element by relative pixel, it does not affect the position
-      and layout of anything else on screen -> may overlap with other element
-  3. Absolute
-     * div { position: relative; }
-       img {
-         position: absolute;
-         right: 30px;
-       }
-     * Positioning the element relative to the parent
-       eg. img relative to div block -> img is at 30px from right edge of div
-     * No longer considered part of natural flow of element, other elements'
-       position do not take into account this anymore;
-       does not leave a ghost element
-  4. Fixed
-     * If "position: fixed;", the element is fixed on the screen when scrolling
-       through the website
-     * Useful for navigation bar or side bar */
