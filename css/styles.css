@@ -217,6 +217,13 @@ hr {
   margin: 0 auto 50px auto;
 }
 
+/* Work Section */
+#work-section {
+  width: 60%;
+  height: auto;
+  margin: 0 auto 50px auto;
+}
+
 /* Contact Section */
 #contact-section {
   width: 60%;
@@ -224,9 +231,18 @@ hr {
   margin: 0 auto 50px auto;
 }
 
+.intern-message {
+  width: 60%;
+  margin: 10px auto 40px;
+}
+
 .contact-message {
-  width: 50%;
-  margin: 40px auto 60px;
+  width: 60%;
+  margin: 5px auto 5px;
+}
+
+.contact-btn {
+  margin: 40px 0 0;
 }
 
 .btn {
@@ -269,11 +285,6 @@ hr {
   color: #FFFFFF;
 }
 
-/* Volunteer Section */
-#contact-section {
-  margin: 0 auto 50px auto;
-}
-
 /* Footer Section */
 #footer-section {
   background-color: #C06C84;
@@ -301,19 +312,19 @@ hr {
 }
 
 /* Cards */
-#cca-section .card-header, #volunteer-section .card-header, #projects-section .card-header {
+#eduction-section .card-header, #cca-section .card-header, #volunteer-section .card-header, #projects-section .card-header,  #work-section .card-header {
   padding: 0;
   border: 0;
   background-color: #F4F4F4;
 }
 
-#cca-section .card , #volunteer-section .card, #projects-section .card {
+#eduction-section .card, #cca-section .card, #volunteer-section .card, #projects-section .card, #work-section .card {
   border: 0;
   padding: 10px 0;
   background-color: #F4F4F4;
 }
 
-#cca-section .card-body, #volunteer-section .card-body, #projects-section .card-body {
+#eduction-section .card-body, #cca-section .card-body, #volunteer-section .card-body, #projects-section .card-body, #work-section .card-body {
   text-align: left;
   background-color: #F2F2F2;
 }
