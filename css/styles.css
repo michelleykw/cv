@@ -156,58 +156,48 @@ hr {
   }
 }
 
-/* Education Section */
-#eduction-section {
-  width: 60%;
-  height: auto;
-  margin: 0 auto 50px auto;
-}
-
-/* Work Experience Section */
-#work-experience-section {
+/* Education, Work Experience, Projects and Hackathons, Co-Curricular Activities Section */
+#eduction-section, #work-experience-section, #projects-section, #cca-section {
   width: 60%;
   height: auto;
   margin: 0 auto 50px auto;
 }
 
 /* Skills Section */
-.skill-row {
+.skill-row-1 {
   width: 60%;
   height: auto;
-  margin: 100px auto 100px auto;
+  margin: 80px auto;
 }
 
-.coding-img, .design-img  {
-  width: 20%;
+.skill-row-2 {
+  width: 60%;
+  height: auto;
+  margin: 80px auto 100px auto;
+}
+
+.skill-text, .skill-title {
+  text-align: left;
+}
+
+.coding-img, .design-img, .ai-img {
+  width: 15%;
   float: left;
-  margin-right: 30px;
-}
-
-.ai-img {
-  width: 20%;
-  float: right;
-  margin-left: 30px;
+  margin-right: 50px;
 }
 
 @media only screen and (max-width: 1012px) {
-  .coding-img, .ai-img, .design-img  {
+  .skill-row-1, .skill-row-2 {
+    margin: 40px auto;
+  }
+  .coding-img, .design-img, .ai-img  {
     width: 20%;
     float: none;
+    margin-right: 0;
   }
-}
-
-/* Projects and Hackathons Section */
-#projects-section {
-  width: 60%;
-  height: auto;
-  margin: 0 auto 50px auto;
-}
-
-/* Co-Curricular Activities Section */
-#cca-section {
-  width: 60%;
-  height: auto;
-  margin: 0 auto 50px auto;
+  .skill-title {
+    text-align: center;
+  }
 }
 
 /* Volunteer Section */
